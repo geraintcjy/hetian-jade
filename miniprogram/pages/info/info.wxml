@@ -1,0 +1,30 @@
+<!--miniprogram/pages/info/info.wxml-->
+<block wx:for-items="{{list}}" wx:key="{{item.id}}">
+  <view class="kind-list-item">
+    <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
+      <view class="kind-list-text">{{item.name}}</view>
+    </view>
+    <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+      <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+      
+        <block wx:for-items="{{item.pageLists}}" wx:for-item="item1">
+            <view id="{{item1.id}}" class="kind-list-item-hd {{item1.pageOpen ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
+              <view class="title">{{item1.page}}</view>
+            </view>
+            <view class="kind-list-item-bd {{item1.pageOpen ? 'kind-list-item-bd-show' : ''}}">
+              <view class="navigator-box {{item1.pageOpen ? 'navigator-box-show' : ''}}">
+                <block>
+                  <!--内容-->
+                  <view>
+                    <image class= "images" style="{{item1.imgstyle}}" src="{{item1.imgsrc}}" mode="widthFix"></image> <!--记得改css-->
+                    <text class="content-text" space="&ensp;">{{item1.content}}</text> <!--记得改css-->
+                  </view>
+                </block>
+              </view>
+            </view>
+        </block>
+
+      </view>
+    </view>
+  </view>
+</block>

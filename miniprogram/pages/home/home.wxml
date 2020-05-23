@@ -1,0 +1,17 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view class="home">
+  <swiper autoplay="1" indicator-dots="1">
+    <swiper-item wx:for="{{imgUrls}}">
+      <image mode='scaleToFill' class='img' src='{{item}}'></image>
+    </swiper-item>
+  </swiper>
+
+  <view class = "text">
+    <text space="emsp">中国四大名玉之一。
+
+根据我国最新玉石规范，我们所说的和田玉指的是软玉，虽然因新疆和田而命名，但其本身不是地域概念，并非特指新疆和田地区出产的玉，而是一类产品的名称。其主要成分包括透闪石和阳起石。中国把透闪石成份占98%以上的石头都命名为和田玉，都在国标范围内。</text> 
+  </view>
+
+
+</view>
+

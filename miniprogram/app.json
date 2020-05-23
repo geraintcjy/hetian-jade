@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/search/search",
+    "pages/info/info"
+  ],
+
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "关于和田玉",
+    "navigationBarTextStyle": "black"
+  },
+
+"tabBar": {
+  "color": "#a9b7b7",
+  "selectedColor": "#11cd6e",
+  "borderStyle": "white",
+  "list": [
+    {
+      "selectedIconPath": "images/info_dark.png",
+      "iconPath": "images/info.png",
+      "pagePath": "pages/info/info",
+      "text": "信息"
+    },
+    {
+      "selectedIconPath": "images/home_dark.png",
+      "iconPath": "images/home.png",
+      "pagePath": "pages/home/home",
+      "text": "主页"
+    },
+    {
+      "selectedIconPath": "images/search_dark.png",
+      "iconPath": "images/search.png",
+      "pagePath": "pages/search/search",
+      "text": "更多"
+    }
+  ]
+},
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

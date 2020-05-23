@@ -1,0 +1,24 @@
+/* miniprogram/pages/home/home.wxss */
+page{
+  background-color: f6f6f6;
+}
+
+.text{
+  width: 93%;
+  margin: 40rpx auto;
+  font-size:30rpx;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+ }
+
+ swiper{
+   align-self: center;
+   height: 500rpx;
+   margin: 25rpx auto;
+   width:95%;
+   border-radius: 25rpx;
+   overflow: hidden;
+ }
