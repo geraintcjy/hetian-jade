@@ -4,9 +4,12 @@ page{
 }
 
 .text{
-  width: 93%;
-  margin: 40rpx auto;
-  font-size:30rpx;
+  border: solid 1px black;
+  box-sizing:border-box;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-left:30rpx;
+  margin-right:30rpx;
 }
 
 .img{
@@ -18,7 +21,16 @@ page{
    align-self: center;
    height: 500rpx;
    margin: 25rpx auto;
-   width:95%;
+   width:92%;
    border-radius: 25rpx;
    overflow: hidden;
+ }
+
+ .content{
+   color: #3f3f3f;
+   font-size: 14px;
+   display:block;
+   margin:20rpx auto;
+   box-sizing: border-box;
+   line-height:1.5em;
  }

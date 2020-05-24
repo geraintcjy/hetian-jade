@@ -10,8 +10,13 @@
    color:#3f3f3f;
    padding-left: 40rpx;
    padding-right: 40rpx;
-   font-size:28rpx;
+   font-size:14px;
    line-height:1.5em;
+ }
+
+ .title{
+  color:#3f3f3f;
+  font-size:16px;
  }
 
  .navigator-box {
@@ -80,7 +85,8 @@
    background-color: #fff;
    border-radius: 4rpx;
    overflow: hidden;
-   border-bottom: 1px dashed #888;
+   border-bottom: solid 1px #3f3f3f;
+   border-top: solid 1px #3f3f3f;
  }
  
  .kind-list-item:first-child {

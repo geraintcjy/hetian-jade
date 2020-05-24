@@ -1,1 +1,63 @@
 /* miniprogram/pages/search/search.wxss */
+.messageBox{
+  background-color: white;
+  margin:40rpx auto;
+}
+
+.all{
+  box-sizing:border-box;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  background-image: url(image/back.jpg);
+}
+
+.content{
+  color: #3f3f3f;
+  font-size: 14px;
+  display:block;
+  margin:20rpx auto;
+  box-sizing: border-box;
+  line-height:1.5em;
+}
+
+.button {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: #3f3f3f;
+  color: #dddddd;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button::after {
+  border-radius: 98rpx;
+  border: 0; 
+}
+
+.button2 {
+
+  margin-top: 70rpx;
+  margin-bottom: 50rpx;
+  background-color: #3f3f3f;
+  color: #dddddd;
+  border-radius: 98rpx;
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button2::after {
+  border-radius: 98rpx;
+  border: 0; 
+}
+
+.messageBox{
+  width:100%;
+  border: solid 1px #3f3f3f;
+  box-sizing:border-box;
+  font-size: 14px;
+}
