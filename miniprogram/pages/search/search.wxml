@@ -2,22 +2,21 @@
 <view class='all'>
   <text class='content'>还想了解其他有关玉石的知识？请在下面告诉我！</text>
   <view class='section'>
-    <textarea class='messageBox' placeholder="请输入您的问题" maxlength='80'>
-    </textarea>
-    <button class='button'>
-      <view>提交</view>
-    </button>
+    <form bindsubmit="bindFormSubmit">
+      <textarea id='textbox' class='messageBox' placeholder="请输入您的问题" maxlength='280' name="textarea" value="{{suggestion}}"/>
+      <button class='button' form-type="submit"> 提交 </button>
+    </form>
   </view>
 
   <text class='content'>
   也推荐您从以下这些渠道了解更多玉石信息，不过小程序不能打开外链，您可自行前往（点击获得链接）</text>
-  <button class='button2'>
+  <button class='button2' bindtap='copy1'>
     <view style="font-size:14px;">《玉石鉴定与评价》</view>
   </button>
-  <button class='button2'>
+  <button class='button2' bindtap='copy2'>
     <view style="font-size:14px;">中国和田玉网</view>
   </button>
-  <button class='button2'>
+  <button class='button2' bindtap='copy3'>
     <view style="font-size:14px;">中国国家标准</view>
   </button>
 </view>

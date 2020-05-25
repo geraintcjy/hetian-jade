@@ -2,6 +2,14 @@
 .messageBox{
   background-color: white;
   margin:40rpx auto;
+  color: #3f3f3f;
+  font-size: 14px;
+  padding-left:30rpx;
+  padding-right:30rpx;
+  padding-top:20rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+  line-height:1.5em;
 }
 
 .all{

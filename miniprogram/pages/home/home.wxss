@@ -10,6 +10,7 @@ page{
   padding-right: 30rpx;
   margin-left:30rpx;
   margin-right:30rpx;
+  margin-bottom:30rpx;
 }
 
 .img{

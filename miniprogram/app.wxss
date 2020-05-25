@@ -20,8 +20,7 @@ button::after{
 
 
 page {
-
-  background-image: url(images/back.jpg);
+  background-image:url(https://6669-first-programme-7l94u-1302087344.tcb.qcloud.la/back1.jpg?sign=dc3c686d2a9a547ef42bba0700f904ba&t=1590328842);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

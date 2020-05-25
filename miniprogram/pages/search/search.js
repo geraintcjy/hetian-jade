@@ -2,8 +2,9 @@
 Page({
   data: {
     focus: false,
-    inputValue: ''
+    suggestion:''
   },
+
   bindKeyInput: function (e) {
     this.setData({
       inputValue: e.detail.value
@@ -34,5 +35,56 @@ Page({
       // 收起键盘
       wx.hideKeyboard()
     }
+  },
+
+  bindFormSubmit: function(e) {
+    console.log(e.detail.value.textarea)
+    wx.showToast({
+      title: '感谢您的反馈',
+      icon: 'success',
+      duration: 1500
+      })
+    this.setData({
+      suggestion:''
+    })
+  },
+
+  copy1:function(e){
+    wx.setClipboardData({
+      data: "coursehome.zhihuishu.com/courseHome/2068709#teachTeam",
+      success: function(e){
+        wx.showToast({
+          title: '复制成功',
+          icon: 'success',
+          duration: 1000
+          })
+      }
+    })
+  },
+
+  copy2:function(e){
+    wx.setClipboardData({
+      data: "www.chinajade.cn",
+      success: function(e){
+        wx.showToast({
+          title: '复制成功',
+          icon: 'success',
+          duration: 1000
+          })
+      }
+    })
+  },
+
+  copy3:function(e){
+    wx.setClipboardData({
+      data: "http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=18FFB042811998A0309E05CF452B2438",
+      success: function(e){
+        wx.showToast({
+          title: '复制成功',
+          icon: 'success',
+          duration: 1000
+          })
+      }
+    })
   }
 })
