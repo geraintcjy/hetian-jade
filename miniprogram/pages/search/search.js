@@ -38,12 +38,18 @@ Page({
   },
 
   bindFormSubmit: function(e) {
+    const db = wx.cloud.database({});
     console.log(e.detail.value.textarea)
     wx.showToast({
       title: '感谢您的反馈',
       icon: 'success',
       duration: 1500
       })
+    db.collection("message").add({
+      data:{
+        message:e.detail.value.textarea
+      }
+    })
     this.setData({
       suggestion:''
     })
